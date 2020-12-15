@@ -1,0 +1,39 @@
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+p {
+    font-size: 2rem;
+}
+
+.font-family-syncopate {
+    font-family: 'Syncopate', sans-serif;
+}
+
+.font-large {
+    font-size: 7rem;
+}
+
+.font-medium {
+    font-size: 3.5rem;
+}
+
+.font-small {
+    font-size: 2.5rem;
+}
+
+.font-extra-light {
+    font-weight: 200;
+}
+
+.font-regular {
+    font-weight: 400;
+}
+
+.font-bold {
+    font-weight: 600;
+}
+
+.vertical-text {
+    transform: rotate(270deg);
+}

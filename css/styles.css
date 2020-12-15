@@ -1,0 +1,46 @@
+html, body { 
+    height: 100%; 
+    width: 100%; 
+    margin: 0; 
+}
+
+li {
+    list-style: none;
+}
+
+#menuMobile {
+    z-index: 100;
+}
+
+section {
+    height: 100vh;
+}
+
+#sectionIndicator {
+    z-index: 99;
+    bottom: 100px;
+    left: -2rem;
+}
+
+.section-footer {
+    height: 20%;
+}
+
+.carousel-item {
+    height: 50%;
+}
+
+.project__tags {
+    left: -8.5rem;
+    bottom: 65%;
+}
+
+.carousel-indicators li {
+    border: 3px solid black;
+    height: 30px;
+    border-radius: 50px;
+}
+
+.carousel-indicators li.active {
+    background-color: black;
+}
