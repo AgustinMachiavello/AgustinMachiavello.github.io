@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Agustin Machiavello ✨💻</title>
+  <title>Agustin Machiavello 💻✨</title>
   <meta name="description" content="Agustin Machiavello Portfolio 2020">
   <meta name="author" content="Agustin Machiavello">
 
@@ -20,15 +20,17 @@
 
 <body>
   <!-- Navigatio -->
-  <nav class="navbar p-4 border-bottom border-dark">
-    <div class="font-medium font-extra-light ">
+  <nav id="navbarMenu" class="navbar p-4 position-fixed w-100 d-flex justify-content-end">
+    <!--div class="font-medium font-bold ">
       Agustin Machiavello
-    </div>
-    <button class="btn font-extra-light font-medium" type="button" data-toggle="collapse" data-target="#menuMobile" aria-expanded="false" aria-controls="menuMobile">
-      X
+    </div-->
+    <button id="mobileMenuButton" class="btn font-bold font-medium" type="button" data-toggle="collapse" data-target="#menuMobile" aria-expanded="false" aria-controls="menuMobile">
+      <span class="button-open">O</span>
+      <span class="button-close">X</span>
     </button>
   </nav>
-  <div class="collapse w-100 position-absolute bg-white pt-4 border-bottom border-dark" id="menuMobile">
+  <!-- Menu -->
+  <div class="collapse w-100 position-fixed bg-white pt-4 border-bottom border-dark" id="menuMobile">
     <ul class="">
       <li>
         <a class="font-large font-extra-light" href="#sectionWork"><span>></span><span>Work</span></a>
@@ -43,20 +45,25 @@
   </div>
   <main>
     <section class="p-4 text-center" id="heroMobile">
-      <div class="">
+      <div class="pt-4">
         <h1 class="font-large font-extra-light">
-          Professional
+          AGUSTIN
         </h1>
-        <h2 class="font-large font-bold">
-          Creativity
+        <h2 class="font-large font-extra-light">
+          MACHIAVELLO
         </h2>
       </div>
       <div class="">
-        <img class="img-fluid" src="img/Saly-10.png" alt="happy programmer"/>
+        <img class="img-fluid" src="img/cat-eating.svg" alt="happy programmer"/>
       </div>
       <div class="d-flex justify-content-center align-items-center section-footer">
-        <h4 class="font-medium font-extra-light pt-4">
-          Full Stack Dev
+        <h4 class="font-medium font-extra-light p-4 text-uppercase">
+          <span class="font-bold">Full Stack</span> 
+          <del>geek</del> developer bringing 
+          <span class="font-bold">passion</span> 
+          and 
+          <span class="font-bold">creativity</span> 
+          to the team
         </h4>
       </div>
     </section>
@@ -65,10 +72,12 @@
         - Work -
       </h1>
     </div>
-    <!-- Projects -->
+
+    <!-- Start Projects -->
+
     <!-- Project 1 -->
     <section class="project p-4 text-center">
-      <h1 class="font-medium font-bold font-extra-light p-4">
+      <h1 class="font-medium font-bold p-4">
         BeautyBlender
       </h1>
       <div class="project__carousel-wrapper p-4">
@@ -80,19 +89,19 @@
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div>
-                <img src="img/beautyblender1.png" alt="sponge BeautyBlender">
+                <img src="./img/1by1.png"/>
               </div>
 
             </div>
             <div class="carousel-item">
               <div>
-                <img src="https://zenprospect-production.s3.amazonaws.com/uploads/pictures/5e0659ebd2ef670001dd3774/picture"/>
+                <img src="./img/1by1.png"/>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="font-small font-medium text-left p-4 m-4">
+      <div class="font-small font-medium text-left p-4 m-4" id="projectDescription1">
         <p>
           Project description lorem ipsum lorem psum description lorem ipsum lorem psum description Project description lorem ipsum lorem psum description lorem ipsum lorem psum description.
         </p>
@@ -101,11 +110,11 @@
         </p>
       </div>
     </section>
-    <div class="project__tags font-small position-fixed font-extra-light vertical-text">
-      <span class="font-family-syncopate">
-        e-commerce
-      </span>
-    </div>
+    <!-- End Project 1 -->
+    <span class="position-fixed vertical-text font-small font-family-syncopate" id="verticalTag"></span>
+    <!--div class="project__tags font-small position-fixed font-extra-light vertical-text">
+
+    </div-->
     <div class="font-small position-fixed font-bold font-extra-light vertical-text mb-4" id="sectionIndicator">
       <span>
         ←

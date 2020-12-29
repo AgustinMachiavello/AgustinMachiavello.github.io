@@ -6,10 +6,12 @@ p {
     font-size: 2rem;
 }
 
+/* Start Font Families */
 .font-family-syncopate {
     font-family: 'Syncopate', sans-serif;
 }
 
+/* Start Font Sizes */
 .font-large {
     font-size: 7rem;
 }
@@ -22,6 +24,7 @@ p {
     font-size: 2.5rem;
 }
 
+/* Start Font Weights */
 .font-extra-light {
     font-weight: 200;
 }
@@ -34,6 +37,8 @@ p {
     font-weight: 600;
 }
 
+
+/* Start Font Rotation */
 .vertical-text {
     transform: rotate(270deg);
 }
