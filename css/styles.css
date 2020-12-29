@@ -27,8 +27,14 @@ section {
 }
 
 #verticalTag {
-    width: 50%;
+    width: 100%;
     bottom: 60%;
+    left: -45%;
+}
+
+#verticalSectionInfo {
+    width: 50%;
+    bottom: 15%;
     left: -20%;
 }
 
