@@ -32,6 +32,11 @@ section {
     left: -45%;
 }
 
+.vertical-tag-trigger {
+    visibility: hidden;
+    display: inline;
+}
+
 #verticalSectionInfo {
     width: 50%;
     bottom: 15%;
@@ -99,4 +104,16 @@ section {
 
 .carousel-indicators li.active {
     background-color: black;
+}
+
+/* Contact section */
+
+.contact-form textarea {
+    height: 30vh;
+}
+
+.contact-form button {
+    height: 10vh;
+    color: var(--plain-white);
+    background-color: var(--plain-black);
 }
