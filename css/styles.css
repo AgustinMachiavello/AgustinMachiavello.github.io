@@ -12,35 +12,30 @@ a {
     color: var(--red);
 }
 
-section {
+/* Landing */
+#landingSection {
     height: 100vh;
 }
 
-#sectionIndicator {
-    z-index: 99;
-    bottom: 100px;
-    left: -2rem;
-}
-
-#heroMobile {
-    /*height: 100%;*/
-}
-
-#verticalTag {
-    width: 100%;
-    bottom: 60%;
-    left: -45%;
-}
-
+/* Vertical tags */
 .vertical-tag-trigger {
     visibility: hidden;
     display: inline;
 }
 
-#verticalSectionInfo {
-    width: 50%;
-    bottom: 15%;
-    left: -20%;
+.rotate-vertical {
+    transform: rotate(270deg);
+}
+
+.vertical-tags-container {
+}
+
+#verticalSectionTag {
+    bottom: 5%;
+}
+
+#verticalInfoTag {
+    bottom: 50%;
 }
 
 /* Start Menu Mobile */
@@ -117,3 +112,5 @@ section {
     color: var(--plain-white);
     background-color: var(--plain-black);
 }
+
+

@@ -13,20 +13,24 @@ p {
 
 /* Start Font Sizes */
 .font-large {
-    font-size: 7rem;
+    font-size: 5rem;
 }
 
 .font-medium {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
 }
 
 .font-small {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
 }
 
 /* Start Font Weights */
 .font-extra-light {
     font-weight: 200;
+}
+
+.font-light {
+    font-weight: 300;
 }
 
 .font-regular {
@@ -39,9 +43,6 @@ p {
 
 
 /* Start Font Rotation */
-.vertical-text {
-    transform: rotate(270deg);
-}
 
 .contrasting-text {
     color: white;
