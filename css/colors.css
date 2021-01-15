@@ -7,3 +7,11 @@
 .border-black {
   border-color: var(--plain-black);
 }
+
+.bg-black {
+  background-color: var(--plain-black);
+}
+
+.bg-red {
+  background-color: var(--red);
+}

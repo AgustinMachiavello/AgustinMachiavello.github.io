@@ -106,6 +106,22 @@
     </section>
     <!-- End About -->
 
+    <!-- Start Contact -->
+    <section class="container-fluid bg-red" id="contactSection">
+      <div class="d-flex h-100 justify-content-center flex-column text-center p-5">
+        <h1 class="font-large font-bold text-white">Say hi</h1>
+        <div class="d-flex justify-content-center contact-form-wrapper pt-5">
+          <form id="contact-form" action="https://formspree.io/xeqpvplp" class="d-flex justify-content-center flex-column contact-form" method="POST">
+            <input type="hidden" name="_subject" value="Contact request from personal website" />
+            <input type="email" name="_replyto" placeholder="Your email" required aria-label="your email" class="font-small font-extra-light p-4 mb-4 rounded border-black">
+            <textarea name="message" placeholder="Tell me about your day..." required class="font-small font-extra-light p-4 mb-4 rounded border-black"></textarea>
+            <button type="submit" class="font-small font-extra-light border-black rounded p-3">Send</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact -->
+
   </main>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!-- Replace with file -->
   <script src="js/bootstrap.min.js"></script>

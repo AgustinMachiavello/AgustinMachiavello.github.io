@@ -116,12 +116,19 @@ a {
 
 /* Contact section */
 
-.contact-form textarea {
-    height: 30vh;
+#contactSection {
+    height: 100vh !important;
+}
+
+.contact-form input {
+    border-width: 1px;
+}
+
+.contact-form input[type="email"] {
+    height: 10vh;
 }
 
 .contact-form button {
-    height: 10vh;
     color: var(--plain-white);
     background-color: var(--plain-black);
 }
@@ -138,12 +145,20 @@ a {
     .project-wrapper:nth-child(even){
         border-right: solid 1px var(--plain-black);
     }
+
+    .contact-form {
+        width: 100%;
+    }
 }
 
 /* sm and up*/
 @media screen and (min-width: 576px) {
     .project-wrapper:nth-child(even) .project__circle-decoration{
         display: none;
+    }
+
+    .contact-form {
+        width: 50%;
     }
 }
 
