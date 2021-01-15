@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/images.css">
   <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!-- Change for local files -->
 </head>
 
 <body>
@@ -28,11 +29,11 @@
         <div class="col col-md-6 col-12 p-sm-5">
           <h1 class="font-large font-light text-uppercase d-none d-lg-block">full stack <br><del>geek</del> developer</h1>
           <h1 class="font-large font-light text-uppercase d-lg-none">full<br>stack<br><del>geek</del><br>dev</h1>
-          <h2 class="font-medium font-extra-light">Bringing passion and creativity to the team</h2>
+          <h2 class="font-medium font-extra-light" data-aos="fade-right">Bringing passion and creativity to the team</h2>
         </div>
         <div class="col col-md-6 col-12 p-sm-5">
           <div class="d-flex align-items-end justify-content-sm-center justify-content-xs-start h-100">
-            <img class="img-fluid landing-image" src="./img/cat-eating.svg" alt="cat eating cereal" />
+            <img class="img-fluid landing-image" src="./img/cat-eating.svg" alt="cat eating cereal" data-aos="fade-left"/>
           </div>
         </div>
       </div>
@@ -59,7 +60,7 @@
           <span class="p-3 position-absolute bg-danger rounded-circle project__circle-decoration"></span>
         </div>
       </div>
-      <div class="row px-md-5">
+      <div class="row px-md-5" data-aos="zoom-in">
         <div class="col col-md-6 col-12 project-wrapper pt-md-4">
           <img class="img-fluid" src="./img/1by1.png" alt="" />
           <div class="py-4">
@@ -85,5 +86,9 @@
   <script src="js/bootstrap.min.js"></script>
   <!-- script src="js/slick.min.js"></script -->
   <script src="js/scripts.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <!-- Change for local files -->
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
