@@ -109,6 +109,11 @@ a {
     background-color: var(--plain-black);
 }
 
+/* About */
+.about-pictures-container {
+    height: 100%;
+}
+
 /* Contact section */
 
 .contact-form textarea {

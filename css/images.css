@@ -10,11 +10,21 @@
     background-size: contain;
 }
 
+
+
 /* Responsive */
 
 /* xs and down */
 @media screen and (max-width: 576px) {
     .landing-image {
+        width: 100%;
+    }
+
+    #profile-picture-front {
+        width: 75%;
+    }
+
+    .about-pictures-container .background-image {
         width: 100%;
     }
 }
@@ -23,6 +33,14 @@
 @media screen and (min-width: 576px) {
     .landing-image {
         width: 100%;
+    }
+
+    #profile-picture-front {
+        width: 50%;
+    }
+
+    .about-pictures-container .background-image {
+        width: 70%;
     }
 }
 

@@ -41,6 +41,10 @@ p {
     font-weight: 400;
 }
 
+.font-semi-bold {
+    font-weight: 500;
+}
+
 .font-bold {
     font-weight: 600;
 }
@@ -62,6 +66,10 @@ p {
 
     .font-medium {
         font-size: 1.5rem;
+    }
+    
+    .font-small {
+        font-size: 1rem;
     }
 }
 
