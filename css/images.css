@@ -10,7 +10,9 @@
     background-size: contain;
 }
 
-
+#linksSection .link-icon {
+    height: 3rem;
+}
 
 /* Responsive */
 
@@ -26,6 +28,10 @@
 
     .about-pictures-container .background-image {
         width: 100%;
+    }
+
+    #linksSection .link-icon {
+        height: 1.5rem;
     }
 }
 
