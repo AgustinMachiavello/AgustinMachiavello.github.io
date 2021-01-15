@@ -1,5 +1,6 @@
-.image-container {
+.landing-image-container {
     width: 100%;
+    height: 100%;
 }
 
 .about__profile-image-wrapper {
@@ -7,4 +8,36 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+/* Responsive */
+
+/* xs and down */
+@media screen and (max-width: 576px) {
+    .landing-image {
+        width: 100%;
+    }
+}
+
+/* sm and up*/
+@media screen and (min-width: 576px) {
+    .landing-image {
+        width: 100%;
+    }
+}
+
+/* md and up*/
+@media screen and (min-width: 768px) {
+
+}
+
+/* lg and up*/
+@media screen and (min-width: 992px) {
+    .landing-image {
+        width: 75%;
+    }
+}
+
+/* xl and up*/
+@media screen and (min-width: 1200px) {
 }

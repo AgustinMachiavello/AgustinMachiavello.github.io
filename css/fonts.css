@@ -41,10 +41,43 @@ p {
     font-weight: 600;
 }
 
-
 /* Start Font Rotation */
 
 .contrasting-text {
     color: white;
     mix-blend-mode: difference;
+}
+
+/* Responsive */
+
+/* Responsive */
+
+/* xs and down */
+@media screen and (max-width: 576px) {
+    .font-large {
+        font-size: 3rem;
+    }
+
+    .font-medium {
+        font-size: 1.5rem;
+    }
+}
+
+/* sm and up*/
+@media screen and (min-width: 576px) {
+
+}
+
+/* md and up*/
+@media screen and (min-width: 768px) {
+
+}
+
+/* lg and up*/
+@media screen and (min-width: 992px) {
+    
+}
+
+/* xl and up*/
+@media screen and (min-width: 1200px) {
 }
