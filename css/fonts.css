@@ -24,6 +24,10 @@ p {
     font-size: 1.5rem;
 }
 
+.font-extra-small {
+    font-size: 1rem;
+}
+
 /* Start Font Weights */
 .font-extra-light {
     font-weight: 200;
@@ -47,8 +51,6 @@ p {
     color: white;
     mix-blend-mode: difference;
 }
-
-/* Responsive */
 
 /* Responsive */
 
