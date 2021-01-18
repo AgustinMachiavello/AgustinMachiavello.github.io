@@ -187,14 +187,24 @@ a {
     z-index: 999;
 }
 
+.hover-link {
+    color: var(--red);
+}
+
+.hover-link:hover {
+    color: var(--red);
+}
+
 .hover-image {
+    width: 100%;
     background-color: var(--red);
-    padding: 0%;
+    padding: 0px;
     transition: 0.3s ease;
 }
 
 .hover-image:hover {
-    padding: 3%;
+    background-color: var(--red);
+    padding-bottom: 5px;
 }
 
 
