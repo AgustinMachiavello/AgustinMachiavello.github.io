@@ -5,7 +5,7 @@
 }
 
 .border-black {
-  border-color: var(--plain-black);
+  border-color: var(--plain-black) !important;
 }
 
 .bg-black {
