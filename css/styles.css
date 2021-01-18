@@ -187,6 +187,16 @@ a {
     z-index: 999;
 }
 
+.hover-image {
+    background-color: var(--red);
+    padding: 0%;
+    transition: 0.3s ease;
+}
+
+.hover-image:hover {
+    padding: 3%;
+}
+
 
 /* Responsive */
 
