@@ -89,6 +89,12 @@ a {
     background-color: var(--red) !important;
 }
 
+#projectScrollSection {
+    max-width: 2000px;
+}
+
+
+
 /* Start Projects Carousel */
 
 .carousel-item {
@@ -145,6 +151,10 @@ a {
     margin: 0 0px;
 }
 
+.service-wrapper span {
+    padding-top: 15px;
+}
+
 /* Responsive */
 
 /* xs and down */
@@ -170,6 +180,14 @@ a {
 
     .contact-form {
         width: 50%;
+    }
+
+    .project-wrapper:nth-child(odd){
+        padding-left: 0px;
+    }
+    
+    .project-wrapper:nth-child(even){
+        padding-right: 0px;
     }
 }
 
