@@ -32,30 +32,36 @@ a {
 
 /* Start Menu Mobile */
 
-#menuMobile {
+#menuLinks {
     z-index: 98;
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
 #navbarMenu {
-    z-index: 99;  
+    z-index: 99;
+    right: 0;
 }
 
-#mobileMenuButton[aria-expanded=false] .button-open {
+#menuButton .button-close {
+    color: var(--plain-white);
+}
+
+#menuButton[aria-expanded=false] .button-open {
     display: inline;
     opacity: 1;
 }
 
-#mobileMenuButton[aria-expanded=true] .button-open {
+#menuButton[aria-expanded=true] .button-open {
     display: none;
     opacity: 0;
 }
 
-#mobileMenuButton[aria-expanded=false] .button-close {
+#menuButton[aria-expanded=false] .button-close {
     display: none;
     opacity: 0;
 }
 
-#mobileMenuButton[aria-expanded=true] .button-close {
+#menuButton[aria-expanded=true] .button-close {
     display: inline;
     opacity: 1;
 }
