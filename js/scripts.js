@@ -43,3 +43,16 @@ $(document).ready(function(){
         }
     });
 });
+
+function OnwindowClick(elem , action){
+    $(document).on('click',function(e){
+        if (!$(elem).is(e.target))
+        {
+            action();
+        }
+    });
+}
+
+OnwindowClick('#menuLinks', function(){
+    $('#menuLinks').collapse('hide');
+ });

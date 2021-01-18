@@ -20,12 +20,15 @@
 </head>
 
 <body>
-  <!--div id="loader-wrapper">
-    <div id="loader">
-    </div>
-  </div-->
+  <!-- Start Loading screen -->
+    <!--div id="loader-wrapper">
+      <div id="loader">
+      </div>
+    </div-->
+  <!-- End Loading screen -->
+
   <!-- Start Navigation -->
-  <nav class="navbar position-fixed px-lg-5" id="navbarMenu">
+  <nav class="d-flex flex-row align-items-center justify-content-center align-content-center navbar position-fixed px-lg-5" id="navbarMenu">
     <button id="menuButton" class="btn font-bold font-medium" type="button" data-toggle="collapse" data-target="#menuLinks" aria-expanded="false" aria-controls="menuLinks">
       <span class="button-open">ooo</span>
       <span class="button-close">x</span>
@@ -33,6 +36,9 @@
   </nav>
   <div class="collapse w-100 position-fixed pt-4 border-bottom border-dark" id="menuLinks">
     <ul class="">
+      <li>
+        <a class="font-large font-extra-light" href="#landingSection"><span>></span><span>Home</span></a>
+      </li>
       <li>
         <a class="font-large font-extra-light" href="#projectScrollSection"><span>></span><span>Work</span></a>
       </li>
@@ -51,6 +57,7 @@
     <section class="container-fluid" id="landingSection">
       <div class="row h-100 p-5 align-items-xl-center">
         <div class="col col-md-6 col-12 p-sm-5">
+          <span class="font-small font-extra-light">Agustin Machiavello</span>
           <h1 class="font-large font-bold text-uppercase d-none d-lg-block"  data-aos="fade-left">full stack <br><del>geek</del> developer</h1>
           <h1 class="font-large font-bold text-uppercase d-lg-none"  data-aos="fade-left">full<br>stack<br><del>geek</del><br>dev</h1>
           <h2 class="font-medium font-extra-light" data-aos="fade-right">Bringing passion and creativity to the team</h2>
@@ -68,7 +75,6 @@
     <section class="container-fluid px-5" id="projectScrollSection">
       <h1 class="font-large font-bold text-center p-5">- Work -</h1>
       <div class="row px-md-5" data-aos="fade-up">
-
           <div class="col col-md-6 col-12 project-wrapper">
             <a href="projects/beautyblender.html">
               <img class="img-fluid hover-image" src="./img/1by1.png" alt="" />
