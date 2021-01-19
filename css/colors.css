@@ -2,6 +2,7 @@
     --plain-white: #ffffff;
     --plain-black: #000000;
     --red: #FF555D;
+    --purple: #fd79a8;
 }
 
 .border-black {
@@ -14,4 +15,8 @@
 
 .bg-red {
   background-color: var(--red);
+}
+
+.bg-purple {
+  background-color: var(--purple);
 }
