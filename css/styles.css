@@ -28,6 +28,10 @@ a {
     display: inline;
 }
 
+.project-detail-page #verticalSectionInfo {
+    bottom: 50% !important;
+}
+
 .rotate-vertical-left {
     transform: rotate(270deg);
 }
@@ -105,6 +109,10 @@ a {
     background-color: var(--red) !important;
 }
 
+.project__circle-decoration--project-detail {
+    background-color: var(--red) !important;
+}
+
 #projectScrollSection {
     max-width: 2000px;
 }
@@ -117,6 +125,10 @@ a {
     right: 0;
 }
 
+.project-page__main-image-wrapper img {
+    width: 100%;
+}
+
 
 /* Start Projects Carousel */
 
@@ -125,14 +137,11 @@ a {
 }
 
 .carousel-indicators li {
-    border: 3px solid var(--plain-black);
     height: 15px;
     width: 15px;
-    border-radius: 50px;
 }
 
 .carousel-indicators li.active {
-    background-color: var(--plain-black);
 }
 
 .carousel-control-prev {
@@ -262,7 +271,7 @@ a {
     }
 
     .contact-form {
-        width: 50%;
+        width: 100%;
     }
 
     .project-wrapper:nth-child(odd){
@@ -289,6 +298,10 @@ a {
 
 /* md and up*/
 @media screen and (min-width: 768px) {
+    .contact-form {
+        width: 95%;
+    }
+
     #verticalSectionInfo {
         left: -44%;
         bottom: 15%;
@@ -297,6 +310,10 @@ a {
 
 /* lg and up*/
 @media screen and (min-width: 992px) {
+    .contact-form {
+        width: 50%;
+    }
+
     #project-page-carousel {
         width: 50%;
     }

@@ -19,9 +19,9 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!-- Change for local files -->
 </head>
 
-<body>
+<body class="project-detail-page">
   <!-- Start Navigation -->
-  <nav class="navbar position-fixed px-lg-5" id="navbarMenu">
+  <nav class="d-flex flex-row align-items-center justify-content-center align-content-center navbar position-fixed px-lg-5" id="navbarMenu">
     <button id="menuButton" class="btn font-bold font-medium" type="button" data-toggle="collapse" data-target="#menuLinks" aria-expanded="false" aria-controls="menuLinks">
       <span class="button-open">ooo</span>
       <span class="button-close">x</span>
@@ -30,24 +30,27 @@
   <div class="collapse w-100 position-fixed pt-4 border-bottom border-dark" id="menuLinks">
     <ul class="">
       <li>
-        <a class="font-large font-extra-light" href="../index.html#projectScrollSection"><span>></span><span>Work</span></a>
+        <a class="font-large font-extra-light" href="#landingSection"><span>></span><span>Home</span></a>
       </li>
       <li>
-        <a class="font-large font-extra-light" href="../index.html#aboutSection"><span>></span><span>About Me</span></a>
+        <a class="font-large font-extra-light" href="#projectScrollSection"><span>></span><span>Work</span></a>
       </li>
       <li>
-        <a class="font-large font-extra-light" href="../index.html#contactSection"><span>></span><span>Contact</span></a>
+        <a class="font-large font-extra-light" href="#aboutSection"><span>></span><span>About Me</span></a>
+      </li>
+      <li>
+        <a class="font-large font-extra-light" href="#contactSection"><span>></span><span>Contact</span></a>
       </li>
     </ul>
   </div>
   <!-- End Navigation -->
   
-  <div class="project-page-wrapper" id="projectPage">
+  <div class="project-page-wrapper pb-4" id="projectPage">
     <div class="p-5">
       <h1 class="font-large font-bold" data-aos="fade-right"><a class="font-extra-light" href="../index.html#projectScrollSection">Work > </a><br class="d-block d-lg-none d-sm-block">Beauty Blender</h1>
-      <h3 class="font-small font-extra-light">Selling beauty online</h3>
-      <div class="row">
-        <div class="col-12 col-md-12 col-lg-6 py-5" data-aos="fade-left">
+      <div class="row align flex-sm-row flex-column-reverse">
+        <div class="col-12 col-md-12 col-lg-6 py-5 px-sm-0 px-lg-1 px-0">
+          <h3 class="font-medium font-bold py-3">Selling beauty online</h3>
           <p class="font-regular font-small pr-lg-5">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
             Maecenas et est nunc. Morbi finibus enim at ex porta, eget feugiat neque convallis. 
@@ -68,10 +71,10 @@
             </ul>
           </div>
         </div>
-        <div class="col-12 col-md-12 col-lg-6 py-sm-5 py-0">
+        <div class="col-12 col-md-12 col-lg-6 py-sm-5 p-0 pt-5">
           <div class="project-page__main-image-container">
             <div class="text-right font-extra-small font-bold border-bottom mb-2 border-black">
-              <span class="font-family-syncopate">e-commerce & web design</span>
+              <div class="font-family-syncopate text-sm-right text-left">e-commerce & web design</div>
             </div>
             <div class="project-page__main-image-wrapper">
               <img class="img-fluid" src="../img/1by1.png"/>
@@ -82,9 +85,10 @@
           </div>
         </div>
       </div>
+      <span class="vertical-tag-trigger" data-text=""></span>
     </div>
     <div class="project-page__gallery p-5 bg-red">
-      <h1 class="font-small font-bold text-center" data-aos="fade-right"></h1>
+      <h1 class="font-small font-bold text-center d-block d-sm-none pb-4" data-aos="fade-up">Gallery</h1>
       <div class="d-flex justify-content-center project-page__carousel-container w-100 mb-3">
         <div id="project-page-carousel" class="carousel slide p-2 bg-white" data-ride="carousel">
           <ol class="carousel-indicators">
@@ -109,9 +113,18 @@
           </a>
         </div>
       </div>
+      <span class="vertical-tag-trigger vertical-tag-trigger--project-detail" data-text="Gallery"></span>
     </div>
   </div>
+
+  <footer class="d-flex flex-row justify-content-center pb-3">
+    <span class="font-extra-small font-bold text-center">Designed and built by  <br> Agustin Machiavello <br> 🐄💨</span>
+  </footer>
   
+  <!-- Start vertical tags -->
+  <span class="position-fixed vertical-text font-small font-bold rotate-vertical-left text-center d-none d-sm-inline" id="verticalSectionInfo"></span-->
+  <!-- End vertical tags -->
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!-- Replace with file -->
   <script src="../js/bootstrap.min.js"></script>
   <script src="../js/scripts.js"></script>
