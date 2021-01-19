@@ -1,12 +1,5 @@
-var verticalTag = $('#verticalTag');
-var projectDescription1 = $('#projectVerticalTag1');
-var projectDescription2 = $('#projectVerticalTag2');
-
-console.log(verticalTag, projectDescription1);
-
-
 function changeVerticalTag(newText, fade) {
-
+    var verticalTag = $('#verticalSectionInfo');
     $(verticalTag).text(newText);
     if (fade === 'fadeIn') {
         $(verticalTag).fadeIn();
@@ -30,17 +23,27 @@ function isViewportVisible(element) {
 }
 
 $(document).ready(function(){
+    var verticalTag = $('#verticalSectionInfo');
+    var verticalTagTriggers = $('.vertical-tag-trigger');
+    console.log(verticalTag, verticalTagTriggers);
+
     // Change vertical left label text based if an element is visible
     $(window).scroll(function() {
-        if (isViewportVisible(projectDescription1) === true) {
-            changeVerticalTag('e-commerce', 'fadeIn');
-        }
-        else if (isViewportVisible(projectDescription2) === true) {
-            changeVerticalTag('full stack project', 'fadeIn');
-        }
-        else {
+        var someTagIsVisible = false;
+        verticalTagTriggers.each(
+            function (i) {
+                var tagElement = $(this)[0];
+                console.log('tag:', tagElement)
+                if (isViewportVisible(tagElement) == true) {
+                    someTagIsVisible = true;
+                    changeVerticalTag(tagElement.dataset.text, 'fadeIn');
+                }
+            }
+        );
+        /*
+        if (!someTagIsVisible) {
             changeVerticalTag('', 'fadeOut');
-        }
+        }*/
     });
 });
 
@@ -54,5 +57,6 @@ function OnwindowClick(elem , action){
 }
 
 OnwindowClick('#menuLinks', function(){
+    // Hide menu if clicked outside
     $('#menuLinks').collapse('hide');
  });
