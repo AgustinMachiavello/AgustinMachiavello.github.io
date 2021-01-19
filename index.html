@@ -54,17 +54,16 @@
   
   <main>
     <!-- Start Landing -->
-    <section class="container-fluid" id="landingSection">
-      <div class="row h-100 p-5 align-items-xl-center">
+    <section class="container-fluid d-flex d-sm-block align-items-center bg-red text-white" id="landingSection">
+      <div class="row p-4 p-sm-5 align-items-xl-center landing-container">
         <div class="col col-md-6 col-12 p-sm-5 p-md-3">
-          <span class="font-extra-small font-extra-light">Agustin Machiavello</span>
-          <h1 class="font-large font-bold text-uppercase d-none d-lg-block"  data-aos="fade-left">full stack <br><del>geek</del> developer</h1>
-          <h1 class="font-large font-bold text-uppercase d-lg-none"  data-aos="fade-left">full<br>stack<br><del>geek</del><br>dev</h1>
+          <h4 class="w-100 font-small font-extra-light">Agustin Machiavello</h4>
+          <h1 class="font-large font-bold text-uppercase" data-aos="fade-left">full stack<br><del>geek</del> developer</h1>
           <h2 class="font-medium font-extra-light" data-aos="fade-right">Bringing passion and creativity to the team</h2>
         </div>
         <div class="col col-md-6 col-12 p-sm-5">
-          <div class="d-flex align-items-end justify-content-sm-center justify-content-start h-100">
-            <img class="img-fluid landing-image" src="./img/cat-eating.svg" alt="cat eating cereal"/>
+          <div class="d-flex align-items-sm-end align-items-start justify-content-sm-center justify-content-start h-100" data-aos="fade-up">
+            <img class="img-fluid landing-image" src="./img/cat-eating-bg.svg" alt="cat eating cereal"/>
           </div>
         </div>
       </div>
@@ -75,8 +74,8 @@
     <!-- Start Project Scroll -->
     <section class="container-fluid px-5" id="projectScrollSection">
       <h1 class="font-large font-bold text-center p-5">- Work -</h1>
-      <div class="row px-md-5" data-aos="fade-up">
-        <div class="col col-md-6 col-12 project-wrapper">
+      <div class="row px-md-5 w-100 projects-container">
+        <div class="col col-md-6 col-12 project-wrapper"  data-aos="fade-down">
           <a href="projects/beautyblender.html">
             <img class="img-fluid hover-image" src="./img/bb-5.jpg" alt="beautyblender sponge" />
           </a>
@@ -86,7 +85,7 @@
           </div>
           <span class="p-3 position-absolute bg-danger rounded-circle project__circle-decoration"></span>
         </div>
-        <div class="col col-md-6 col-12 project-wrapper">
+        <div class="col col-md-6 col-12 project-wrapper" data-aos="fade-down">
           <a href="projects/lucchese.html">
             <img class="img-fluid hover-image" src="./img/lu-3.jpg" alt="man wearing whiet lucchese t-shirt" />
           </a>
@@ -98,10 +97,10 @@
         </div>
       </div>
       <span class="vertical-tag-trigger" data-text="← More work"></span>
-      <div class="row px-md-5" data-aos="fade-up">
-        <div class="col col-md-6 col-12 project-wrapper pt-md-4">
+      <div class="row px-md-5 projects-container">
+        <div class="col col-md-6 col-12 project-wrapper pt-md-4" data-aos="fade-down">
           <a href="projects/salam-hello.html">
-            <img class="img-fluid" src="./img/sh-1.jpg" alt="moroccan women inside a house" />
+            <img class="img-fluid hover-image" src="./img/sh-1.jpg" alt="moroccan women inside a house" />
           </a>
           <div class="py-4">
             <h2 class="font-medium font-bold hover-link"><a class="hover-link" href="projects/salam-hello.html">Salam Hello</a></h2>
@@ -109,7 +108,7 @@
           </div>
           <span class="p-3 position-absolute bg-danger rounded-circle project__circle-decoration"></span>
         </div>
-        <div class="col col-md-6 col-12 project-wrapper pt-md-4">
+        <div class="col col-md-6 col-12 project-wrapper pt-md-4" data-aos="fade-down">
           <a href="projects/lashify.html">
             <img class="img-fluid hover-image" src="./img/ly-1.jpg" alt="woman eye close up" />
           </a>
@@ -126,7 +125,7 @@
 
     <!-- Start About -->
     <section class="container-fluid" id="aboutSection">
-      <div class="row p-5">
+      <div class="row p-5 p-sm-4">
         <div class="col col-lg-6 col-sm-12 col-12 p-sm-5">
           <h1 class="font-large font-bold text-capitalize" data-aos="fade-right">About me</h1>
           <p class="font-small font-regular">
@@ -141,12 +140,12 @@
         </div>
         <div class="col col-lg-6 col-sm-12 col-12 p-5">
           <div class="d-flex justify-content-center align-items-center about-pictures-container p-sm-5 p-0">
-            <img class="img-fluid background-image" src="./img/about-bg.png" alt="background circles with colors" data-aos="fade-left"/>
+            <img class="img-fluid background-image" src="./img/about-bg.png" alt="background circles with colors"/>
             <img class="position-absolute img-fluid" src="./img/profile-picture-1.png" alt="agustin machiavello profile picture (handsome)" id="profile-picture-front"/>
           </div>
         </div>
       </div>
-      <div class="row pb-5 mb-5 font-regular" id="services">
+      <div class="row pb-5 mb-5 font-regular font-bold-mobile" id="services" data-aos="fade-up">
         <div class="col-12 col-md-6 col-lg-3 pt-lg-0 pt-md-5 pt-5 d-flex flex-column justify-content-center align-items-center service-wrapper">
           <img class="img-fluid" src="./img/python.svg" alt="python language icon"/>
           <span class="font-small">Python</span>
@@ -164,7 +163,7 @@
           <span class="font-small">Shopify</span>
         </div>
       </div>
-      <h3 class="font-small font-regular text-center pb-5">And other things too 🤓</h3>
+      <h3 class="font-small font-regular text-center pb-5 font-bold-mobile">And other things too 🤓</h3>
       <span class="vertical-tag-trigger" data-text="← Contact"></span>
     </section>
     <!-- End About -->
@@ -172,13 +171,13 @@
     <!-- Start Contact -->
     <section class="container-fluid bg-red" id="contactSection">
       <div class="d-flex h-100 justify-content-center flex-column text-center p-5">
-        <h1 class="font-large font-bold text-white">Say hi</h1>
+        <h1 class="font-large font-bold text-white" data-aos="fade-up">Say hi</h1>
         <div class="d-flex justify-content-center contact-form-wrapper pt-5">
           <form id="contact-form" action="https://formspree.io/xeqpvplp" class="d-flex justify-content-center flex-column contact-form" method="POST">
             <input type="hidden" name="_subject" value="Contact request from personal website" />
             <input type="email" name="_replyto" placeholder="Your email" required aria-label="your email" class="font-small font-extra-light p-4 mb-4 rounded border-black">
             <textarea name="message" placeholder="Tell me about your day..." required class="font-small font-extra-light p-4 mb-4 rounded border-black"></textarea>
-            <button type="submit" class="font-small font-extra-light border-black rounded p-3">Send</button>
+            <button type="submit" class="font-small font-regular border-black rounded p-3">Send</button>
           </form>
         </div>
       </div>
@@ -191,30 +190,30 @@
     <div class="text-center p-5">
       <h1 class="font-large font-bold" data-aos="fade-down">More links</h1>
       <div class="d-flex justify-content-center align-items-center flex-column py-5">
-        <ul class="d-flex flex-column justify-content-center font-medium text-left px-2">
+        <ul class="d-flex flex-column justify-content-center font-medium font-bold text-left px-2">
           <li class=""><a class="d-flex align-items-center" href="https://github.com/AgustinMachiavello" target="__blank"><img class="img-fluid link-icon mr-4" src="img/github.png" alt="github icon"><span>Github</span></a></li>
           <li class=""><a class="d-flex align-items-center" href="https://www.linkedin.com/in/agust%C3%ADn-machiavello-2a9a73165/" target="__blank"><img class="img-fluid link-icon mr-4" src="img/linkedin.png" alt="linkedin icon"><span>LinkedIn</span></a></li>
           <li class=""><a class="d-flex align-items-center" href="https://www.figma.com/community/file/883778082594341562" target="__blank"><img class="img-fluid link-icon mr-4" src="img/heart.svg" alt="heart icon"><span>Illustrations</span></a></li>
         </ul>
       </div>
-      <span class="vertical-tag-trigger" data-text="Thank you :D"></span>
+      <span class="vertical-tag-trigger" data-text="Thank you ✨🐷"></span>
       <div class="px-sm-5 px-0">
-        <h2 class="font-medium font-regular">Liked my portfolio? <a href="https://github.com/AgustinMachiavello/AgustinMachiavello.github.io" target="__blank">Download it!</a></h2>
-        <h5 class="mt-5 font-extra-small font-regular">*Last page update: January 16th 2021</h5>
+        <h2 class="font-small font-regular">Liked my portfolio? <a class="font-bold" href="https://github.com/AgustinMachiavello/AgustinMachiavello.github.io" target="__blank">Download it!</a></h2>
+        <h5 class="d-none mt-5 font-extra-small font-regular">*Last page update: January 16th 2021</h5>
       </div>
     </div>
    </section>
     <!-- End Links -->
 
     <footer class="d-flex flex-row justify-content-center pb-3">
-      <span class="font-extra-small font-bold text-center">-- Designed and built by Agustin Machiavello 🐄💨 --</span>
+      <span class="font-extra-small font-bold text-center">Designed and built by  <br> Agustin Machiavello <br> 🐄💨</span>
     </footer>
   </main>
 
   <!-- Start vertical tags -->
   <span class="position-fixed vertical-text font-small font-bold rotate-vertical-left text-center" id="verticalSectionInfo" href="#">
     ← Work
-  </span>
+  </span-->
   <!-- End vertical tags -->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!-- Replace with file -->

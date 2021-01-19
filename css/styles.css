@@ -12,6 +12,11 @@ a {
     color: var(--red);
 }
 
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
 /* Landing */
 #landingSection {
     height: 100vh;
@@ -104,6 +109,10 @@ a {
     max-width: 2000px;
 }
 
+#projectScrollSection a {
+    color: var(--plain-black)
+}
+
 .project-page__vertical-tag {
     right: 0;
 }
@@ -162,6 +171,7 @@ a {
 }
 
 .contact-form button {
+    border: 0px;
     color: var(--plain-white);
     background-color: var(--plain-black);
 }
@@ -217,8 +227,8 @@ a {
         padding-top: 1rem;
     }
 
-    .project-wrapper:nth-child(even){
-        border-right: solid 1px var(--plain-black);
+    .project-wrapper {
+        border-right: 0px !important;
     }
 
     .contact-form {
@@ -228,6 +238,20 @@ a {
     #verticalSectionInfo {
         left: -45%;
         bottom: 10%;
+    }
+
+    .font-bold-mobile {
+        font-weight: 600;
+    }
+
+    .hover-image {
+        border-radius: 0.25rem;
+        background-color: var(--red);
+        padding-bottom: 3px;
+    }
+
+    .projects-container:last-of-type .project-wrapper:last-of-type .project__circle-decoration {
+        right: 50%;
     }
 }
 
@@ -256,6 +280,10 @@ a {
     #verticalSectionInfo {
         left: -45%;
         bottom: 15%;
+    }
+
+    .project-wrapper {
+        border-bottom: 0px !important;
     }
 }
 
