@@ -133,6 +133,7 @@ a {
 /* Start Projects Carousel */
 
 .carousel-indicators {
+    margin: 0;
     bottom: -3rem;
 }
 
@@ -158,6 +159,9 @@ a {
 
 .carousel-control-next-icon {
     background-image: url('../img/arrow-right.svg');
+}
+
+.carousel-inner video {
 }
 
 /* About */

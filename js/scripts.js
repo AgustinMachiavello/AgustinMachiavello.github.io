@@ -33,7 +33,6 @@ $(document).ready(function(){
         verticalTagTriggers.each(
             function (i) {
                 var tagElement = $(this)[0];
-                console.log('tag:', tagElement)
                 if (isViewportVisible(tagElement) == true) {
                     someTagIsVisible = true;
                     changeVerticalTag(tagElement.dataset.text, 'fadeIn');
