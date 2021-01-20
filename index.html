@@ -58,13 +58,13 @@
   <main>
     <!-- Start Landing -->
     <section class="container-fluid d-flex d-sm-block align-items-center bg-red text-white" id="landingSection">
-      <div class="row px-0 p-sm-5 align-items-xl-center landing-container">
-        <div class="col col-md-6 col-12 p-sm-5 p-md-3">
+      <div class="row px-0 p-sm-5 align-items-xl-center landing-container rellax" data-rellax-speed="2">
+        <div class="col col-lg-6 col-12 p-sm-5 p-md-3">
           <h4 class="w-100 font-small font-extra-light">Agustin Machiavello</h4>
           <h1 class="font-large font-bold text-uppercase" data-aos="fade-left">full stack<br><del class="text-black"><span class="text-white">geek</span></del> developer</h1>
           <h2 class="font-medium font-extra-light" data-aos="fade-right">Bringing passion and creativity to the team</h2>
         </div>
-        <div class="col col-md-6 col-12 p-sm-5">
+        <div class="col col-lg-6 col-12 p-sm-5 d-block d-sm-none">
           <div class="d-flex align-items-sm-end align-items-start justify-content-sm-center justify-content-start h-100" data-aos="fade-up">
             <img class="img-fluid landing-image" src="./img/cat-eating-bg.svg" alt="cat eating cereal"/>
           </div>
@@ -76,7 +76,7 @@
 
     <!-- Start Project Scroll -->
     <section class="container-fluid p-sm-5 px-4" id="projectScrollSection">
-      <h1 class="font-large font-bold text-center p-5">Top Work</h1>
+      <h1 class="font-large font-bold text-center p-5 rellax" data-rellax-speed="1">Top Work</h1>
       <!-- Projects Row 1 -->
       <div class="row px-md-5 w-100 projects-container">
         <div class="col col-md-6 col-12 project-wrapper"  data-aos="fade-down">
@@ -84,7 +84,7 @@
             <img class="img-fluid hover-image" src="./img/bb-7.jpeg" alt="beautyblender sponge" />
           </a>
           <div class="py-4">
-              <h2 class="font-medium font-bold hover-link"><a class="hover-link" href="projects/beautyblender.html">BeautyBlender</a></h2>
+            <h2 class="font-medium font-bold hover-link rellax" data-rellax-speed="0"><a class="hover-link" href="projects/beautyblender.html">BeautyBlender</a></h2>
             <span class="font-extra-small font-family-syncopate">project leader, front-end dev & shopify</span>
           </div>
           <span class="p-3 position-absolute bg-danger rounded-circle project__circle-decoration"></span>
@@ -255,6 +255,11 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <!-- Change for local files -->
   <script>
     AOS.init();
+  </script>
+  <script src="js/rellax.min.js"></script>
+  <script>
+    // Accepts any class name
+    var rellax = new Rellax('.rellax');
   </script>
 </body>
 </html>

@@ -18,6 +18,13 @@
     width: 30%;
 }
 
+#landingSection {
+    background-image: url('../img/frame-lg.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 /* Responsive */
 
 /* xs and down */
